@@ -14,7 +14,7 @@ Un proyecto interactivo creado con **HTML**, **CSS** y **JavaScript** que permit
 ## Tecnologías Utilizadas
 
 - **HTML5**: Estructura del contenido.
-- **CSS3**: Estilos visuales, uso de variables y diseño responsivo.
+- **CSS3**: Estilos visuales.
 - **JavaScript**: Lógica para manejar la funcionalidad interactiva del proyecto.
 
 ## Cómo Usar
