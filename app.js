@@ -17,27 +17,32 @@ const botonResetearJuego = document.querySelector("#button-reset"); // Referenci
 /* Definiendo la función agregar tus amigos, que tiene como objetivo agregar los nombres de los 
 amigos al array y actualizar la lista en la interfaz.*/
 function agregarTusAmigos() {
-    const nombre = inputDeNombres.value.trim(); // Aqui obtenemos el valor del input y eliminamos los espacios en blanco con "trim".
-    if (nombre != "") { // Aqui se valida que el nombre no este vacio.
-        amigos.push(nombre); // Agregamos el nombre al array de "amigos".
-        enseñarAmigos(); // Aca se actualiza la lista visible en el DOM.
-        inputDeNombres.value = ""; // Limpiamos el input después de agregar el nombre.
-        inputDeNombres.focus(); // Hacemos que el input siga teniendo el foco o que siga seleccionado para seguir escribiendo en ella.
-    } else {
-        alert("Por favor, ingreso un nombre."); // Si el input esta vacio, se muestra una alerta mencionando esto.
+    const nombre = inputDeNombres.value.trim();
+    if (!nombre) {
+        alert("Por favor, ingresa un nombre.");
+        return;
     }
+    if (amigos.includes(nombre)) {
+        alert("Este nombre ya ha sido agregado. Por favor, ingresa otro nombre.");
+    } else {
+        amigos.push(nombre);
+        enseñarAmigos();
+    }
+    inputDeNombres.value = "";
+    inputDeNombres.focus();
 }
-
 /* Esta función recorre el array "amigos" y agrega cada nombre a la lista de amigos en la interfaz.
 Primero limpia el contenido anterior de la lista, luego crea un nuevo elemento lista para cada amigo,
 lo coloca dentro de una lista desordenada con el id "listaAmigos", y lo muestra en orden numerado. */
 function enseñarAmigos() {
-    listaDeLosAmigos.innerHTML = ""; // Se limpia el contenido actual de la lista.
-    amigos.forEach((amigo, index) => { // Recorre el arrar "amigos".
-        const li = document.createElement("li"); // Aca se crea un nuevo elemento lista.
-        li.textContent = `${index + 1}. ${amigo}` // A los nombres se le asigna como "1. Nombre". con el indice y el nombre agregado al array.
-        listaDeLosAmigos.appendChild(li); // Se agrega la lista y la lista desordenada a la interfaz.
+    const fragmento = document.createDocumentFragment();
+    amigos.forEach((amigo, index) => {
+        const lista = document.createElement("li");
+        lista.innerHTML = `${index + 1}. ${amigo}`;
+        fragmento.appendChild(lista);
     });
+    listaDeLosAmigos.innerHTML = "";
+    listaDeLosAmigos.appendChild(fragmento);
 }
 
 /*
@@ -49,7 +54,7 @@ function sortearAmigos() {
         alert("Debes agregar al menos un amigo."); // Si no hay amigos, se muestra una alerta al usuario.
         return; // Salimos de la función.
     }
-    const amigoSecreto = amigos[Math.floor(Math.random() * amigos.length)]; // Se selecciona un nombre aleatorio del array "amigos".
+    const amigoSecreto = amigos.splice(Math.floor(Math.random() * amigos.length), 1)[0]; // Se selecciona un nombre aleatorio del array "amigos".
     resultadoDelSorteo.innerHTML = `<li>El amigo secreto es: <strong>${amigoSecreto}</strong></li>`; // Se muetra el resultado en el DOM correspondiente.
 }
 
@@ -57,7 +62,7 @@ function sortearAmigos() {
 y devuelve el foco al input. */
 function resetearJuego() {
     amigos.length = 0; // Vacia el array "amigos".
-    listaAmigos.innerHTML = ""; // Limpia el contenido de la lista en el DOM.
+    listaDeLosAmigos.innerHTML = ""; // Limpia el contenido de la lista en el DOM.
     resultadoDelSorteo.innerHTML = ""; // Limpia el resultado del sorteo.
     inputDeNombres.value = ""; // Limpia el valor del input.
     inputDeNombres.focus(); // Devuelve el foco al input.
