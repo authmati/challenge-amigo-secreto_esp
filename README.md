@@ -1,52 +1,50 @@
 # Juego del amigo secreto:
 
-[![Vista Previa del Formulario](https://i.imgur.com/c5oAga3.png)](https://github.com/authmati)
+[![Vista Previa del Proyecto Amigo Secreto](https://i.imgur.com/c5oAga3.png)](https://github.com/authmati)
 
-Un proyecto interactivo creado con **HTML**, **CSS** y **JavaScript** que permite agregar nombres de amigos, sortear un amigo secreto aleatoriamente y resetear el juego fácilmente.
+Este proyecto es una aplicación interactiva desarrollada con HTML, CSS y JavaScript que permite organizar un juego de "Amigo Secreto" de manera sencilla y divertida. Fue creado como un desafío de lógica y diseño.
 
-## Características
+## Descripción
 
-- Agregar amigos a una lista dinámica.
-- Visualización en tiempo real de los nombres agregados.
-- Sorteo aleatorio de un "amigo secreto".
-- Resetear el juego para comenzar de nuevo.
+La aplicación permite:
+- Agregar nombres de amigos a una lista.
+- Visualizar los nombres ingresados en orden.
+- Realizar un sorteo para seleccionar al "Amigo Secreto" de manera aleatoria.
+- Reiniciar el juego para comenzar nuevamente.
+
+Puedes probar la aplicación en acción a través de GitHub Pages:
+[Visitar el Juego del Amigo Secreto](https://authmati.github.io/challenge-amigo-secreto_esp/)
 
 ## Tecnologías Utilizadas
 
-- **HTML5**: Estructura del contenido.
-- **CSS3**: Estilos visuales.
-- **JavaScript**: Lógica para manejar la funcionalidad interactiva del proyecto.
+- **HTML5**: Para estructurar el contenido.
+- **CSS3**: Para el diseño y estilos visuales.
+- **JavaScript**: Para la lógica del juego y la interacción dinámica.
 
-## Cómo Usar
+## Características
 
-Sigue estos pasos para utilizar el proyecto en tu entorno local:
+1. **Agregar Amigos**: Ingresa los nombres de los participantes del juego.
+2. **Mostrar Lista**: Visualiza todos los nombres agregados en orden numerado.
+3. **Sortear Amigo Secreto**: Selecciona un amigo aleatorio de la lista.
+4. **Reiniciar Juego**: Limpia todos los datos para comenzar de nuevo.
+
+## Instalación Local
+
+Si deseas ejecutar este proyecto de forma local:
 
 1. Clona este repositorio:
 
    ```bash
-   git clone https://github.com/tu-usuario/juego-del-amigo-secreto.git
+   git clone https://github.com/authmati/challenge-amigo-secreto_esp.git
    ```
-   
-3. Abre el archivo `index.html` en tu navegador.
-4. Interactúa con la interfaz para:
-   - Agregar nombres de amigos.
-   - Sortear un amigo secreto.
-   - Resetear el juego.
 
-## Estructura del Proyecto
+2. Navega al directorio del proyecto:
 
-```
-raíz del proyecto
-├── index.html       # Estructura del contenido
-├── style.css        # Estilos del proyecto
-├── app.js           # Lógica y funcionalidades
-└── assets/          # Recursos como imágenes
-    └── sherlock-conan.png
-```
+   ```bash
+   cd challenge-amigo-secreto_esp
+   ```
 
-## Contribuciones
-
-¡Las contribuciones son bienvenidas! Si deseas agregar mejoras, simplemente haz un fork de este repositorio y envía un pull request con tus cambios.
+4. Abre el archivo `index.html` en tu navegador preferido.
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"><br><br>
 
