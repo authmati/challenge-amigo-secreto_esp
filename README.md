@@ -22,11 +22,13 @@ Un proyecto interactivo creado con **HTML**, **CSS** y **JavaScript** que permit
 Sigue estos pasos para utilizar el proyecto en tu entorno local:
 
 1. Clona este repositorio:
+
    ```bash
    git clone https://github.com/tu-usuario/juego-del-amigo-secreto.git
    ```
-2. Abre el archivo `index.html` en tu navegador.
-3. Interactúa con la interfaz para:
+   
+3. Abre el archivo `index.html` en tu navegador.
+4. Interactúa con la interfaz para:
    - Agregar nombres de amigos.
    - Sortear un amigo secreto.
    - Resetear el juego.
