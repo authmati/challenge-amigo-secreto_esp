@@ -12,7 +12,7 @@ La aplicación permite:
 - Realizar un sorteo para seleccionar al "Amigo Secreto" de manera aleatoria.
 - Reiniciar el juego para comenzar nuevamente.
 
-[Visitar el Juego del Amigo Secreto](https://authmati.github.io/challenge-amigo-secreto_esp/)
+Puedes probar la aplicación en acción a través de GitHub Pages: [Visitar el Juego del Amigo Secreto](https://authmati.github.io/challenge-amigo-secreto_esp/)
 
 ## Tecnologías Utilizadas
 
