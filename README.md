@@ -1,1 +1,1 @@
-Proyecto amigo secreto
+![Juego del amigo secreto](https://i.imgur.com/wik3gYn.png)
