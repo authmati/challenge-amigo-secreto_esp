@@ -1,1 +1,1 @@
-![Juego del amigo secreto](https://i.imgur.com/wik3gYn.png)
+![Juego del amigo secreto](https://i.imgur.com/OF5ssOT.png)
