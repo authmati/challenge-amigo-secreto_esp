@@ -53,7 +53,3 @@ Si deseas ejecutar este proyecto de forma local:
 
 4. Abre el archivo `index.html` en tu navegador preferido.
 
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"><br><br>
-
-
-
