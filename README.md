@@ -1,7 +1,4 @@
 <p align="center">
-   <a href="https://github.com/authmati">
-         <img src="https://img.shields.io/badge/authmati-gray?style=for-the-badge&logo=github&labelColor=%230f8577" alt="Github">
-   </a>
    <img src="https://img.shields.io/badge/ESTADO-EN%20DESARROLLO-ab0fff?style=for-the-badge" alt="Estado">
    <img src="https://img.shields.io/badge/Licencia-MIT-green?style=for-the-badge" alt="Licencia">
 </p>
