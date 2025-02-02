@@ -1,9 +1,9 @@
 <p align="center">
-   <img src="https://img.shields.io/badge/html5-%23b843f7?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">
-   <img src="https://img.shields.io/badge/css-%23b843f7?style=for-the-badge&logo=css&logoColor=white" alt="CSS">
-   <img src="https://img.shields.io/badge/javascript-%23b843f7?style=for-the-badge&logo=javascript&logoColor=white" alt="JavaScript">
-   <img src="https://img.shields.io/badge/finalizado-%23b843f7?style=for-the-badge&logoColor=white&label=estado&labelColor=%23242424" alt="Estado Finalizado">
-   <img src="https://img.shields.io/badge/mit-%23b843f7?style=for-the-badge&logoColor=white&label=licencia&labelColor=%23242424" alt="Licencia MIT">
+   <img src="https://img.shields.io/badge/html5-%239046cf?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">
+   <img src="https://img.shields.io/badge/css-%239046cf?style=for-the-badge&logo=css&logoColor=white" alt="CSS">
+   <img src="https://img.shields.io/badge/javascript-%239046cf?style=for-the-badge&logo=javascript&logoColor=white" alt="JavaScript">
+   <img src="https://img.shields.io/badge/finalizado-%239046cf?style=for-the-badge&logoColor=white&label=estado&labelColor=%23242424" alt="Estado Finalizado">
+   <img src="https://img.shields.io/badge/mit-%239046cf?style=for-the-badge&logoColor=white&label=licencia&labelColor=%23242424" alt="Licencia MIT">
 </p>
 
 # 🎁 Juego del amigo secreto 🎁
