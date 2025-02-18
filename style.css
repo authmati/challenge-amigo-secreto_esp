@@ -4,8 +4,6 @@
     --color-tertiary: #CC59D2;     
     --color-button: #F487B6;       
     --color-button-hover: #CC59D2;
-    --color-text: #9046CF;         
-    --color-white: #FFF3F0; 
     --font-primary: "Bungee", serif;
     --font-secondary: "Asap", sans-serif;       
 }
@@ -59,7 +57,7 @@ body {
     font-size: 48px;
     font-weight: 900;
     font-style: italic;
-    color: var(--color-white);
+    color: var(--color-secondary);
 }
 
 .section-title {
@@ -120,7 +118,6 @@ body {
     flex: 1;
     padding: 10px 15px;
     font-size: 16px;
-    border-right: none;
     font-family: var(--font-primary);
 }
 
@@ -129,21 +126,18 @@ button {
     font-family: var(--font-secondary);
     font-size: 16px;
     cursor: pointer;
-}
-
-.btn-agregar {
     border: none;
-    color: white;
+    color: var(--color-secondary);
     background-color: var(--color-button);
 }
 
-.btn-agregar:hover {
+button:hover {
     background-color: var(--color-button-hover);
 }
 
 ul {
     list-style-type: none;
-    color: var(--color-text);
+    color: var(--color-primary);
     font-family: var(--font-secondary);
     font-size: 18px;
     margin: 20px 0;
@@ -151,45 +145,23 @@ ul {
 
 .result-list {
     margin-top: 15px;
-    color: var(--color-text);
+    color: var(--color-primary);
     font-size: 22px;
     font-weight: bold;
     text-align: center;
 }
 
-.btn-sortear {
+.btn-sortear, .btn-resetear {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     margin-bottom: 15px;
     padding: 20px 40px;
-    color: var(--color-white);
     border-radius: 15px;
     border: 1px solid var(--color-tertiary);
-    background-color: var(--color-button);
-    font-size: 16px;
 }
 
-.btn-sortear:hover {
-    background-color: var(--color-button-hover);
-}
-
-
-.btn-resetear {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin-bottom: 15px;
-    padding: 20px 40px;
-    color: var(--color-white);
-    border-radius: 15px;
-    border: 1px solid var(--color-tertiary);
-    background-color: var(--color-button);
-    font-size: 16px;
-}
-
-.btn-resetear:hover {
+.btn-sortear:hover, .btn-resetear:hover {
     background-color: var(--color-button-hover);
 }
