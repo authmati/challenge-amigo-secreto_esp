@@ -1,11 +1,13 @@
 :root {
-    --color-primary: #9046CF;
-    --color-secondary: #FFF3F0;    
-    --color-tertiary: #CC59D2;     
-    --color-button: #F487B6;       
-    --color-button-hover: #CC59D2;
+    --color-primary: #a84dbd;
+    --color-secondary: #FFFFFF;
+    --color-tertiary: #000000;
+    --color-button: #e26dd2;
+    --color-button-hover: #a84dbd;
+    --color-text: #000000;
+    --color-white: #FFFFFF;
     --font-primary: "Bungee", serif;
-    --font-secondary: "Asap", sans-serif;       
+    --font-secondary: "Asap", sans-serif;
 }
 
 * {
@@ -22,6 +24,41 @@ body {
     align-items: center;
 }
 
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem 2rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.github-btn {
+    background: var(--color-button);
+    border: 1px solid var(--color-tertiary);
+    border-radius: 15px; 
+    width: 45px;
+    height: 45px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.github-btn:hover {
+    background: var(--color-button-hover);
+}
+
+.github-btn img {
+    width: 60%;
+    filter: invert(99%) sepia(3%) saturate(614%) hue-rotate(351deg) brightness(101%) contrast(101%);
+}
+
+
 .main-content {
     display: flex;
     flex-direction: column;
@@ -33,13 +70,13 @@ body {
     flex: 40%;
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
     padding: 40px 0 0;
 }
 
 .header-banner img {
-    width: 300px;
-    height: auto;
+    width: 40%;
 }
 
 .input-section {
@@ -49,15 +86,19 @@ body {
     flex-direction: column;
     align-items: center;
     padding: 20px;
-    width: 100%;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+    width: 90%; 
+    max-width: 600px; 
+    margin: 2rem auto;
+    border-radius: 15px; 
 }
 
 .main-title {
     font-family: var(--font-primary);
-    font-size: 48px;
+    font-size: 25px;
     font-weight: 900;
     font-style: italic;
-    color: var(--color-secondary);
+    color: var(--color-white);
 }
 
 .section-title {
@@ -81,15 +122,10 @@ body {
 }
 
 .input-name {
-    background-color: var(--color-secondary);
     width: 100%;
     padding: 10px;
     font-size: 16px;
     border: none;
-}
-
-.input-name::placeholder {
-    color: var(--color-primary);
 }
 
 .button-container {
@@ -101,23 +137,24 @@ body {
 }
 
 .cuadro-resultados {
-    display: flex;                  
-    justify-content: space-between; 
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    gap: 20px;                      
-    width: 100%;                    
-    max-width: 600px;               
-    margin: 20px auto;              
-    padding: 20px;                 
+    gap: 20px;
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
     border: 1px solid var(--color-tertiary);
-    border-radius: 15px;           
-    background-color: var(--color-secondary);
+    border-radius: 15px;
+    background-color: white;
 }
 
 .input-title {
     flex: 1;
     padding: 10px 15px;
     font-size: 16px;
+    border-right: none;
     font-family: var(--font-primary);
 }
 
@@ -126,18 +163,22 @@ button {
     font-family: var(--font-secondary);
     font-size: 16px;
     cursor: pointer;
+}
+
+.btn-agregar {
     border: none;
-    color: var(--color-secondary);
+    color: white;
+    transition: all 0.3s ease;
     background-color: var(--color-button);
 }
 
-button:hover {
+.btn-agregar:hover {
     background-color: var(--color-button-hover);
 }
 
 ul {
     list-style-type: none;
-    color: var(--color-primary);
+    color: var(--color-text);
     font-family: var(--font-secondary);
     font-size: 18px;
     margin: 20px 0;
@@ -145,7 +186,7 @@ ul {
 
 .result-list {
     margin-top: 15px;
-    color: var(--color-primary);
+    color: var(--color-text);
     font-size: 22px;
     font-weight: bold;
     text-align: center;
@@ -155,13 +196,91 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all 0.3s ease;
     width: 100%;
     margin-bottom: 15px;
     padding: 20px 40px;
+    color: var(--color-white);
     border-radius: 15px;
     border: 1px solid var(--color-tertiary);
+    background-color: var(--color-button);
+    font-size: 16px;
 }
 
 .btn-sortear:hover, .btn-resetear:hover {
     background-color: var(--color-button-hover);
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    nav {
+        padding: 0.5rem 1rem;
+    }
+
+    .header-banner {
+        padding: 20px 0;
+    }
+
+    .main-title {
+        font-size: 36px;
+    }
+
+    .section-title {
+        font-size: 28px;
+    }
+
+    .input-wrapper {
+        flex-direction: column;
+        width: 100%;
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+
+    .input-name {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .button-container {
+        flex-direction: column;
+        margin-top: 10px;
+        gap: 10px;
+    }
+
+    .btn-sortear, .btn-resetear {
+        padding: 12px;
+        font-size: 14px;
+        width: 100%;
+    }
+
+    .cuadro-resultados {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    ul {
+        font-size: 16px;
+    }
+
+    .result-list {
+        font-size: 18px;
+    }
+
+    .input-section {
+        width: 95%; 
+        max-width: 100%; 
+        padding: 15px; 
+        margin: 1.5rem auto;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+        border-radius: 10px; 
+    }
 }
